@@ -108,11 +108,12 @@ class ImageSourceBottomSheetState extends State<ImageSourceBottomSheet> {
               onTap: () => _onPickImage(ImageSource.camera),
             ),
           if (widget.availableImageSources.contains(ImageSourceOption.gallery))
-            ListTile(
-              leading: widget.galleryIcon,
-              title: widget.galleryLabel,
-              onTap: () => _onPickImage(ImageSource.gallery),
-            ),
+            SizedBox()
+            // ListTile(
+            //   leading: widget.galleryIcon,
+            //   title: widget.galleryLabel,
+            //   onTap: () => _onPickImage(ImageSource.gallery),
+            // ),
         ],
       ),
     );
